@@ -4,6 +4,13 @@ h1 {
     color: #4A443F;
     font-size: 6em;
     margin-bottom: 0em;
+    background-color: #D7C9B8;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    margin-left: 4em;
+    margin-right: 4em;
+    border-radius: 1em;
+    padding: 0.2em;
 }
 
 body {
