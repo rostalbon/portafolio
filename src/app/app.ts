@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Footer } from './estatico/footer/footer';
-import { Header } from './estatico/header/header';
-import { Nav } from './estatico/nav/nav';
+import { Footer } from './static/footer/footer';
+import { Header } from './static/header/header';
+import { Nav } from './static/nav/nav';
 
 @Component({
   selector: 'app-root',
