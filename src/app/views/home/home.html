@@ -1,36 +1,38 @@
 <section>
-  <div class="parent-container">
-    <div class="carrousel-container">
-      <button (click)="prev()">&#10094;</button>
-      <div class="img" [innerHTML]="img"></div>
-      <button (click)="next()">&#10095;</button>
-    </div>
-    <div class="right-container">
-      <p class="name">ROCÍO STALTARI BONMASSAR</p>
-      <h2>Habilidades principales</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Inglés B2</li>
-        <li>Sonido y música</li>
-        <li>Ciberseguridad</li>
-      </ul>
-      <h2>Proyectos principales</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/rostalbon/actividad-localstorage"
-            >Actividad LocalStorage (2024)</a
-          >
-        </li>
-        <li><a href="https://github.com/rostalbon/curso-adultos">Curso Adultos (2025)</a></li>
-        <li>
-          <a href="https://github.com/rostalbon/trabajo-integrador-robot"
-            >Trabajo Integrador Robot (2025)</a
-          >
-        </li>
-      </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <button (click)="prev()">&#10094;</button>
+        <div class="img" [innerHTML]="img"></div>
+        <button (click)="next()">&#10095;</button>
+      </div>
+      <div class="col">
+        <p class="name">ROCÍO STALTARI BONMASSAR</p>
+        <h2>Habilidades principales</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Inglés B2</li>
+          <li>Sonido y música</li>
+          <li>Ciberseguridad</li>
+        </ul>
+        <h2>Proyectos principales</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/rostalbon/actividad-localstorage"
+              >Actividad LocalStorage (2024)</a
+            >
+          </li>
+          <li><a href="https://github.com/rostalbon/curso-adultos">Curso Adultos (2025)</a></li>
+          <li>
+            <a href="https://github.com/rostalbon/trabajo-integrador-robot"
+              >Trabajo Integrador Robot (2025)</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
