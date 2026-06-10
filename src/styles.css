@@ -1,49 +1,49 @@
 h1 {
-    text-align: center;
-    color: #4A443F;
-    font-size: 6em;
-    background-color: #D7C9B8;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-    margin-left: 4em;
-    margin-right: 4em;
-    border-radius: 1em;
-    padding: 0.2em;
+  text-align: center;
+  color: #4a443f;
+  font-size: 5em;
+  background-color: #d7c9b8;
+  margin-inline: 4em;
+  border-radius: 1em;
+  padding: 0.2em;
+  margin-block: 0;
+}
+
+header {
+  margin-block: 0.2em;
+  padding-block: 1em;
+}
+
+header,
+nav {
+  background-color: #eae2d6;
+  margin: 1em;
+  border-radius: 1em;
 }
 
 body {
-    background-color: #F9F7F2;
-    font-family: monospace;
+  background-color: #f9f7f2;
+  font-family: monospace;
 }
 
 .esc {
-    font-style: italic;
+  font-style: italic;
 }
 
 .name {
-    font-size: xx-large;
-    font-weight: bold;
+  font-size: xx-large;
+  font-weight: bold;
 }
 
 ul {
-    list-style-type: square;
-    font-size: large;
+  list-style-type: square;
+  font-size: large;
 }
 
 a {
-    color: #B07D62;
+  color: #b07d62;
 }
 
 a:hover {
-    color: #96654b;
-}
-
-.container {
-  margin-top: 1.2em;
-  padding: 2em;
-  background-color: #EAE2D6;
-  border-radius: 2em;
-  padding-top: 1em;
-  margin: 1em;
-  color: #4A443F;
+  color: #96654b;
 }
