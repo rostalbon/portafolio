@@ -3,7 +3,8 @@ h1 {
   color: #4a443f;
   font-size: 5em;
   background-color: #d7c9b8;
-  margin-inline: 4em;
+  width: fit-content;
+  margin-inline: auto;
   border-radius: 1em;
   padding: 0.2em;
   margin-block: 0;
