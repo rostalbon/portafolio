@@ -8,27 +8,35 @@ import { ProjectsService } from "../../services/projects.service";
   styleUrl: './home.css',
 })
 export class Home {
-  img: string = `<img src="foto-rostro.webp" alt="">`;
+  imgArray = [
+    "foto-rostro.webp",
+    "foto-biblioteca.JPG",
+    "foto-arbol.JPG"
+  ]
+  num = 0
+  img = this.imgArray[0]
   next() {
-    if (this.img == `<img src="foto-rostro.webp" alt="">`) {
-      this.img = `<img src="foto-biblioteca.JPG" alt="">`;
-    }
-    else if (this.img == `<img src="foto-biblioteca.JPG" alt="">`) {
-      this.img = `<img src="foto-arbol.JPG" alt="">`;
-    }
-    else {
-      this.img = `<img src="foto-rostro.webp" alt="">`;
+    if (this.num === 0) {
+      this.img = this.imgArray[1]
+      this.num += 1
+    } else if (this.num === 1) {
+      this.img = this.imgArray[2]
+      this.num += 1
+    } else {
+      this.img = this.imgArray[0]
+      this.num = 0
     }
   }
   prev() {
-    if (this.img == `<img src="foto-rostro.webp" alt="">`) {
-      this.img = `<img src="foto-arbol.JPG" alt="">`;
-    }
-    else if (this.img == `<img src="foto-arbol.JPG" alt="">`) {
-      this.img = `<img src="foto-biblioteca.JPG" alt="">`
-    }
-    else {
-      this.img = `<img src="foto-rostro.webp" alt="">`
+    if (this.num === 0) {
+      this.img = this.imgArray[2]
+      this.num = 2
+    } else if (this.num === 1) {
+      this.img = this.imgArray[0]
+      this.num -= 1
+    } else {
+      this.img = this.imgArray[1]
+      this.num -= 1
     }
   }
   projects: any = []
