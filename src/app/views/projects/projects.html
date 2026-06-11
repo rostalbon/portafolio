@@ -5,7 +5,7 @@
       @for (project of projects; track $index) {
         <li>
           <div>
-            <h4><a [href]="project.url">{{project.title}}</a></h4>
+            <h5><a [href]="project.url">{{project.title}}</a></h5>
             <p>Año: {{project.year}}</p>
             <p>Tecnologías: {{project.technologies.join(", ")}}</p>
             <p>Descripción: {{project.description}}</p>
