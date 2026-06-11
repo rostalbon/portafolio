@@ -10,7 +10,6 @@ import { ProjectsService } from '../../services/projects.service';
 export class Projects {
   projects: any = []
   constructor(private service: ProjectsService, private cdr: ChangeDetectorRef) {
-    this.cdr.detach()
     this.service.getProjects().subscribe({
       next: (data) => {
         this.projects = data
