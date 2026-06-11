@@ -70,6 +70,8 @@ body {
 ul {
   list-style-type: square;
   font-size: large;
+  list-style:disc;
+  color: #4a443f;
 }
 
 a {
