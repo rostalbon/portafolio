@@ -43,6 +43,7 @@ nav {
 header {
   margin-block: 0.2em;
   padding-block: 1em;
+  padding-inline: 1em;
 }
 
 header,
