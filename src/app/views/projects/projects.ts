@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { ProjectsService } from '../../services/projects.service';
 
 @Component({
@@ -9,14 +9,17 @@ import { ProjectsService } from '../../services/projects.service';
 })
 export class Projects {
   projects: any = []
-  constructor(private service: ProjectsService) {
+  constructor(private service: ProjectsService, private cdr: ChangeDetectorRef) {
+    this.cdr.detach()
     this.service.getProjects().subscribe({
       next: (data) => {
         this.projects = data
         console.log(this.projects)
       },
       error: (error) => console.error(error),
-      complete: () => console.log("La llamada terminó")
+      complete: () => {
+        this.cdr.detectChanges()
+      }
     })
   }
 }
