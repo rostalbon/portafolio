@@ -12,6 +12,11 @@ h1 {
 
 .name {
   font-weight: bold;
+  margin-top: 1em;
+}
+
+.row, .col, .col-sm-6 {
+  margin-bottom: 1em;
 }
 
 nav {
@@ -79,4 +84,35 @@ a {
 
 a:hover {
   color: #96654b;
+}
+
+.img {
+  width: 75%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+}
+
+.img ::ng-deep img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.2s;
+  color: #4A443F;
+}
+
+button:hover {
+  transform: scale(1.2);
 }
