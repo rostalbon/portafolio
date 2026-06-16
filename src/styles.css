@@ -10,6 +10,10 @@ h1 {
   margin-block: 0;
 }
 
+.name {
+  font-weight: bold;
+}
+
 nav {
   text-align: center;
   padding: 2em;
@@ -60,11 +64,6 @@ body {
 
 .esc {
   font-style: italic;
-}
-
-.name {
-  font-size: xx-large;
-  font-weight: bold;
 }
 
 ul {
