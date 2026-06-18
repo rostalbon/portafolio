@@ -48,17 +48,15 @@ nav {
       list-style: none;
     }
   }
-}
-
-.navbar-toggler {
-  transition: 0.3s;
-}
-
-.navbar-toggler:hover {
-  background-color: #c2ae95;
+  button {
+    transition: 0.3s;
+  }
+  button:hover {
+    background-color: #c2ae95;
     margin: 0em;
     transition: 0.3s;
     color: #4a443f;
+  }
 }
 
 header {
