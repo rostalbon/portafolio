@@ -11,6 +11,15 @@ h1 {
   margin-block: 0;
 }
 
+footer {
+    text-align: center;
+    font-size: medium;
+    background-color:#D7C9B8;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+}
+
 .name {
   font-weight: bold;
   margin-top: 1em;
