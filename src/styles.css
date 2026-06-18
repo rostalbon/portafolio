@@ -110,11 +110,13 @@ footer {
   display: block;
 }
 
-/* EVERYTHING */
+/* ABOUT */
 
 .text {
   text-align: justify;
 }
+
+/* EVERYTHING */
 
 .container {
   margin-top: 2em;
