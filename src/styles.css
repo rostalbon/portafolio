@@ -36,7 +36,7 @@ nav {
   a:hover {
     background-color: #c2ae95;
     padding: 1em;
-    margin: 0.2em;
+    margin: 0em;
     transition: 0.3s;
     color: #4a443f;
   }
@@ -50,14 +50,24 @@ nav {
   }
 }
 
+.navbar-toggler {
+  transition: 0.3s;
+}
+
+.navbar-toggler:hover {
+  background-color: #c2ae95;
+    margin: 0em;
+    transition: 0.3s;
+    color: #4a443f;
+}
+
 header {
   margin-block: 0.2em;
   padding-block: 1em;
   padding-inline: 1em;
 }
 
-header,
-nav {
+header, nav {
   background-color: #eae2d6;
   margin: 1em;
   border-radius: 1em;
