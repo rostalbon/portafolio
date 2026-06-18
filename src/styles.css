@@ -6,7 +6,8 @@ h1 {
   width: fit-content;
   margin-inline: auto;
   border-radius: 1em;
-  padding: 0.2em;
+  padding-block: 0.2em;
+  padding-inline: 0.5em;
   margin-block: 0;
 }
 
