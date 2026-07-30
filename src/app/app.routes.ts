@@ -3,6 +3,7 @@ import { About } from './views/about/about';
 import { Projects } from './views/projects/projects';
 import { Contact } from './views/contact/contact';
 import { Home } from './views/home/home';
+import { SignIn } from './views/sign-in/sign-in';
 
 export const routes: Routes = [
     {path:"", redirectTo:"home", pathMatch:'full'},
@@ -10,4 +11,5 @@ export const routes: Routes = [
     {path:"projects", component:Projects},
     {path:"contact", component:Contact},
     {path:"home", component:Home},
+    {path: "sign-in", component:SignIn}
 ];
