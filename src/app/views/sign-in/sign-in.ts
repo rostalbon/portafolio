@@ -1,9 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import {FormBuilder, ReactiveFormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-sign-in',
-  imports: [],
+  imports: [ReactiveFormsModule],
   templateUrl: './sign-in.html',
   styleUrl: './sign-in.css',
 })
-export class SignIn {}
+export class SignIn {
+  private formBuilder = inject(FormBuilder)
+  signInForm = this.formBuilder.group({
+    name: [''],
+    surname: [''],
+    email: [''],
+    password: [''],
+    passwordConfirmation: ['']
+  })
+}
