@@ -130,6 +130,21 @@ button:hover {
   text-align: justify;
 }
 
+/* SIGN IN */
+
+.submit {
+  background-color: #b07d62;
+  border-radius: 1em;
+  transition: 0.2s;
+  color: white;
+  font-size: large;
+}
+
+.submit:hover {
+  background-color: #96654b;
+  transform: scale(1.1);
+}
+
 /* EVERYTHING */
 
 .container {
