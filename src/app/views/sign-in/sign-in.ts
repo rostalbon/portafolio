@@ -13,8 +13,8 @@ export class SignIn {
     name: ['', [Validators.required]],
     surname: ['', [Validators.required]],
     email: ['', [Validators.required, Validators.email]],
-    passwd: ['', [Validators.required, Validators.min(6)]],
-    passwdConfirmation: ['', [Validators.required, Validators.min(6)]]
+    passwd: ['', [Validators.required, Validators.minLength(6)]],
+    passwdConfirmation: ['', [Validators.required, Validators.minLength(6)]]
   })
   createUser() {
     if (this.signInForm.valid) {
