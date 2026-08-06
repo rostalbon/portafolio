@@ -13,7 +13,7 @@ export class SignIn {
     name: [''],
     surname: [''],
     email: [''],
-    password: [''],
-    passwordConfirmation: ['']
+    passwd: [''],
+    passwdConfirmation: ['']
   })
 }
