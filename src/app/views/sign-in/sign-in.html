@@ -8,22 +8,49 @@
                 <div class="mb-3">
                     <label for="inputName" class="form-label">Nombre/s</label>
                     <input formControlName="name" type="text" class="form-control" id="inputName">
+                    @if (Name?.invalid && Name?.touched) {
+                        <div class="text-danger">Ingrese un nombre</div>
+                    }
                 </div>
                 <div class="mb-3">
                     <label for="inputSurname" class="form-label">Apellido/s</label>
                     <input formControlName="surname" type="text" class="form-control" id="inputSurname">
+                    @if (Surname?.invalid && Surname?.touched) {
+                        <div class="text-danger">Ingrese un apellido</div>
+                    }
                 </div>
                 <div class="mb-3">
                     <label for="inputEmail" class="form-label">Correo electrónico</label>
                     <input formControlName="email" type="email" class="form-control" id="inputEmail">
+                    @if (Email?.invalid && Email?.touched) {
+                        @if (Email?.hasError("required")) {
+                            <div class="text-danger">Ingrese un correo electrónico</div>
+                        } @else if (Email?.hasError("email")) {
+                            <div class="text-danger">Correo electrónico no válido</div>
+                        }
+                    }
                 </div>
                 <div class="mb-3">
                     <label for="inputPasswd" class="form-label">Contraseña</label>
                     <input formControlName="passwd" type="password" class="form-control" id="inputPasswd">
+                    @if (Passwd?.invalid && Passwd?.touched) {
+                        @if (Passwd?.hasError("required")) {
+                            <div class="text-danger">Ingrese una contraseña</div>
+                        } @else if (Passwd?.hasError("minLength")) {
+                            <div class="text-danger">Contraseña no válida</div>
+                        }
+                    }
                 </div>
                 <div class="mb-3">
                     <label for="inputPasswdConfirmation" class="form-label">Confirmar contraseña</label>
                     <input formControlName="passwdConfirmation" type="password" class="form-control" id="inputPasswdConfirmation">
+                    @if (PasswdConfirmation?.invalid && PasswdConfirmation?.touched) {
+                        @if (PasswdConfirmation?.hasError("required")) {
+                            <div class="text-danger">Ingrese una contraseña</div>
+                        } @else if (PasswdConfirmation?.hasError("minLength")) {
+                            <div class="text-danger">Contraseña no válida</div>
+                        }
+                    }
                 </div>
                 <button type="submit" class="submit">Registrarse</button>
             </form>

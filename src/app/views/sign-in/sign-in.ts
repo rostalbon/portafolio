@@ -16,6 +16,21 @@ export class SignIn {
     passwd: ['', [Validators.required, Validators.minLength(6)]],
     passwdConfirmation: ['', [Validators.required, Validators.minLength(6)]]
   })
+  get Name() {
+    return this.signInForm.get("name")
+  }
+  get Surname() {
+    return this.signInForm.get("surname")
+  }
+  get Email() {
+    return this.signInForm.get("email")
+  }
+  get Passwd() {
+    return this.signInForm.get("passwd")
+  }
+  get PasswdConfirmation() {
+    return this.signInForm.get("passwdConfirmation")
+  }
   createUser() {
     if (this.signInForm.valid) {
       alert("Registro exitoso")
