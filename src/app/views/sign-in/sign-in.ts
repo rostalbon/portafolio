@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-in',
@@ -10,11 +10,11 @@ import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 export class SignIn {
   private formBuilder = inject(FormBuilder)
   signInForm = this.formBuilder.group({
-    name: [''],
-    surname: [''],
-    email: [''],
-    passwd: [''],
-    passwdConfirmation: ['']
+    name: ['', [Validators.required]],
+    surname: ['', [Validators.required]],
+    email: ['', [Validators.required, Validators.email]],
+    passwd: ['', [Validators.required, Validators.min(6)]],
+    passwdConfirmation: ['', [Validators.required, Validators.min(6)]]
   })
   createUser() {
     console.log(this.signInForm.value)
