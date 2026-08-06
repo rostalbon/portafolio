@@ -17,6 +17,11 @@ export class SignIn {
     passwdConfirmation: ['', [Validators.required, Validators.min(6)]]
   })
   createUser() {
-    console.log(this.signInForm.value)
+    if (this.signInForm.valid) {
+      alert("Registro exitoso")
+      console.log(this.signInForm.value)
+    } else {
+      alert("Formulario no válido")
+    }
   }
 }
