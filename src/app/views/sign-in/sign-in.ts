@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import {FormBuilder, ReactiveFormsModule} from '@angular/forms';
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-in',
