@@ -16,4 +16,7 @@ export class SignIn {
     passwd: [''],
     passwdConfirmation: ['']
   })
+  createUser() {
+    console.log(this.signInForm.value)
+  }
 }
