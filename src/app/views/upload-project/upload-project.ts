@@ -55,4 +55,6 @@ export class UploadProject {
   get Main() {
     return this.uploadProjectForm.get("main")
   }
+  formValue = { ...this.uploadProjectForm.value }
+  selecteds = this.formValue.html || this.formValue.css || this.formValue.javascript || this.formValue.typescript || this.formValue.python || this.formValue.others
 }
