@@ -11,15 +11,15 @@ export class UploadProject {
   private formBuilder = inject(FormBuilder)
   uploadProjectForm = this.formBuilder.group({
     title: ['', [Validators.required]],
-    html: [''],
-    css: [''],
-    javascript: [''],
-    typescript: [''],
-    python: [''],
-    others: [''],
+    html: [false],
+    css: [false],
+    javascript: [false],
+    typescript: [false],
+    python: [false],
+    others: [false],
     year: ['', [Validators.required, Validators.min(1950), Validators.max(2026)]],
     url: ['', [Validators.pattern(/^(https?:\/\/)?(www\.)?github\.com\/[a-zA-Z0-9_-]+\/?.*$/)]],
-    description: [''],
+    description: ['', [Validators.required]],
     main: ['']
   })
   get Title() {
