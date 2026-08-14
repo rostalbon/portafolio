@@ -145,6 +145,12 @@ button:hover {
   transform: scale(1.1);
 }
 
+/* UPLOAD PROJECT */
+
+.note {
+  font-size: smaller;
+}
+
 /* EVERYTHING */
 
 .container {
