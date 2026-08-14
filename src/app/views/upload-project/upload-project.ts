@@ -18,7 +18,7 @@ export class UploadProject {
     python: [false],
     others: [false],
     year: ['', [Validators.required, Validators.min(1950), Validators.max(2026)]],
-    url: ['', [Validators.pattern(/^(https?:\/\/)?(www\.)?github\.com\/[a-zA-Z0-9_-]+\/?.*$/)]],
+    url: ['', [Validators.required, Validators.pattern(/^(https?:\/\/)?(www\.)?github\.com\/[a-zA-Z0-9_-]+\/?.*$/)]],
     description: ['', [Validators.required]],
     main: ['']
   })
