@@ -40,10 +40,13 @@
                         Python
                     </label>
                     <br>
-                    <input formControlName="otros" class="form-check-input" type="checkbox" id="inputOtros" value="">
-                    <label for="inputOtros" class="form-check-label">
+                    <input formControlName="otros" class="form-check-input" type="checkbox" id="inputOthers" value="">
+                    <label for="inputOthers" class="form-check-label">
                         Otros
                     </label>
+                </div>
+                <div class="mb-3">
+                    <p class="note">(En caso de no seleccionar ninguno, se seleccionará sólo la opción "Otros" automáticamente)</p>
                 </div>
                 <div class="mb-3">
                     <label for="inputYear" class="form-label">Año</label>
@@ -61,7 +64,7 @@
                     <label for="inputMain" class="form-label">¿Es un proyecto principal?</label>
                     <br>
                     <input formControlName="main" type="checkbox" class="form-check-input" id="inputMain">
-                    <p class="note">(Los proyectos principales se mostrarán en la página de inicio)</p>
+                    <p class="note">(Los proyectos principales se mostrarán además en la página de inicio)</p>
                 </div>
                 <div class="mb-3">
                     <button type="submit" class="submit">Subir</button>
