@@ -20,8 +20,9 @@ export class UploadProject {
     year: ['', [Validators.required, Validators.min(1950), Validators.max(2026)]],
     url: ['', [Validators.required, Validators.pattern(/^(https?:\/\/)?(www\.)?github\.com\/[a-zA-Z0-9_-]+\/?.*$/)]],
     description: ['', [Validators.required]],
-    main: ['']
+    main: [false]
   })
+  private techControls = ['html', 'css', 'javascript', 'typescript', 'python'];
   get Title() {
     return this.uploadProjectForm.get("title")
   }
@@ -55,6 +56,19 @@ export class UploadProject {
   get Main() {
     return this.uploadProjectForm.get("main")
   }
-  formValue = { ...this.uploadProjectForm.value }
-  selecteds = this.formValue.html || this.formValue.css || this.formValue.javascript || this.formValue.typescript || this.formValue.python || this.formValue.others
+  uploadProject(): void {
+    if (this.uploadProjectForm.invalid) {
+      this.uploadProjectForm.markAllAsTouched();
+      return;
+    }
+    const formValues = this.uploadProjectForm.value;
+    const selected = this.techControls.some(
+      tech => formValues[tech as keyof typeof formValues] === true
+    );
+    if (!selected) {
+      this.uploadProjectForm.patchValue({ others: true });
+    }
+    const payload = this.uploadProjectForm.value;
+    console.log('Datos a enviar:', payload);
+  }
 }
