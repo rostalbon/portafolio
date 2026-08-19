@@ -56,7 +56,7 @@ export class UploadProject {
   get Main() {
     return this.uploadProjectForm.get("main")
   }
-  uploadProject(): void {
+  uploadProject() {
     if (this.uploadProjectForm.invalid) {
       this.uploadProjectForm.markAllAsTouched();
       return;
