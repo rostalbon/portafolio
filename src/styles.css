@@ -151,10 +151,6 @@ button:hover {
   font-size: smaller;
 }
 
-.btn-cancelar {
-  text-decoration: none;
-}
-
 /* EVERYTHING */
 
 .container {
@@ -180,4 +176,8 @@ a {
 
 a:hover {
   color: #96654b;
+}
+
+.btn-upload-project {
+  text-decoration: none;
 }
