@@ -70,16 +70,27 @@ export class UploadProject {
     if (!selected) {
       this.uploadProjectForm.patchValue({ others: true });
     }
-    const payload = this.uploadProjectForm.value;
-    console.log('Datos a enviar:', payload);
+    const { html, css, javascript, typescript, python, others, ...cleanPayload } = this.uploadProjectForm.value;
+    const techArray: string[] = [];
+    if (html) techArray.push("HTML");
+    if (css) techArray.push("CSS");
+    if (javascript) techArray.push("JavaScript");
+    if (typescript) techArray.push("TypeScript");
+    if (python) techArray.push("Python");
+    if (others || !selected) techArray.push("Otros");
+    const payload = {
+      ...cleanPayload,
+      technologies: techArray
+    };
     this.service.createProject(payload).subscribe({
       next: (data) => {
-        console.log('Guardado con éxito', data)
+        console.log('Guardado con éxito', data);
+        this.uploadProjectForm.reset(); // Opcional: limpiar formulario al guardar
       },
       error: (error) => console.error(error),
       complete: () => {
-        this.cdr.detectChanges()
+        this.cdr.detectChanges();
       }
-    })
+    });
   }
 }
