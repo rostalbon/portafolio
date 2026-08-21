@@ -1,11 +1,11 @@
 import { ChangeDetectorRef, Component, inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ProjectsService } from '../../services/projects.service';
 
 @Component({
   selector: 'app-upload-project',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RouterLink],
   templateUrl: './upload-project.html',
   styleUrl: './upload-project.css',
 })
