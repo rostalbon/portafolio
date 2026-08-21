@@ -1,4 +1,5 @@
 import { ChangeDetectorRef, Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ProjectsService } from '../../services/projects.service';
 
@@ -11,6 +12,7 @@ import { ProjectsService } from '../../services/projects.service';
 export class UploadProject {
   constructor(private service: ProjectsService, private cdr: ChangeDetectorRef) {}
   private formBuilder = inject(FormBuilder)
+  private router = inject(Router)
   uploadProjectForm = this.formBuilder.group({
     title: ['', [Validators.required]],
     html: [false],
@@ -86,6 +88,8 @@ export class UploadProject {
       next: (data) => {
         console.log('Guardado con éxito', data);
         this.uploadProjectForm.reset();
+        this.router.navigate(['/projects']);
+        alert("Proyecto guardado")
       },
       error: (error) => console.error(error),
       complete: () => {
