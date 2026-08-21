@@ -1,5 +1,6 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ProjectsService } from '../../services/projects.service';
 
 @Component({
   selector: 'app-upload-project',
@@ -8,6 +9,7 @@ import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
   styleUrl: './upload-project.css',
 })
 export class UploadProject {
+  constructor(private service: ProjectsService, private cdr: ChangeDetectorRef) {}
   private formBuilder = inject(FormBuilder)
   uploadProjectForm = this.formBuilder.group({
     title: ['', [Validators.required]],
@@ -70,5 +72,14 @@ export class UploadProject {
     }
     const payload = this.uploadProjectForm.value;
     console.log('Datos a enviar:', payload);
+    this.service.createProject(payload).subscribe({
+      next: (data) => {
+        console.log('Guardado con éxito', data)
+      },
+      error: (error) => console.error(error),
+      complete: () => {
+        this.cdr.detectChanges()
+      }
+    })
   }
 }

@@ -1,50 +1,91 @@
 {
-    "projects": [{
-        "title": "Actividad LocalStorage",
-        "technologies": ["HTML", "JavaScript", "CSS"],
-        "year": "2024",
-        "url": "https://github.com/rostalbon/actividad-localstorage",
-        "description":"Actividad que realicé de forma individual en 5° año, en el 2024, en la materia Desarrollo II con el profesor Pablo Bersier.",
-        "isMain": true
+  "projects": [
+    {
+      "title": "Actividad LocalStorage",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS"
+      ],
+      "year": "2024",
+      "url": "https://github.com/rostalbon/actividad-localstorage",
+      "description": "Actividad que realicé de forma individual en 5° año, en el 2024, en la materia Desarrollo II con el profesor Pablo Bersier.",
+      "isMain": true,
+      "id": "A6EusOgFizc"
     },
     {
-        "title": "Curso Adultos",
-        "technologies": ["HTML", "JavaScript", "CSS"],
-        "year": "2025",
-        "url": "https://github.com/rostalbon/curso-adultos",
-        "description": "Curso de informática hecho con HTML, JavaScript y CSS orientado a adultos que creamos en conjunto con mis compañeros Valentín Domínguez Tapia, Julián Benítez, Tiago Magne, Liwen Albrecht, Luciano Martínez, Francisco Carollo, Ángeles Pietra, Francisco Pacheco, Octavio Gigli y Nahiara Millahuala en el año 2025, en la materia Asistencia al Usuario, en 6° año, en el 2025. Se llevó a cabo de forma tal que nosotros nos teníamos que organizar como queramos, por lo que, en aquel momento, decidimos hacer el proyecto todos juntos y no dividirnos por roles.",
-        "isMain": true
+      "title": "Curso Adultos",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS"
+      ],
+      "year": "2025",
+      "url": "https://github.com/rostalbon/curso-adultos",
+      "description": "Curso de informática hecho con HTML, JavaScript y CSS orientado a adultos que creamos en conjunto con mis compañeros Valentín Domínguez Tapia, Julián Benítez, Tiago Magne, Liwen Albrecht, Luciano Martínez, Francisco Carollo, Ángeles Pietra, Francisco Pacheco, Octavio Gigli y Nahiara Millahuala en el año 2025, en la materia Asistencia al Usuario, en 6° año, en el 2025. Se llevó a cabo de forma tal que nosotros nos teníamos que organizar como queramos, por lo que, en aquel momento, decidimos hacer el proyecto todos juntos y no dividirnos por roles.",
+      "isMain": true,
+      "id": "IHzJzSnSCr4"
     },
     {
-        "title": "Trabajo Integrador Robot",
-        "technologies": ["Python"],
-        "year": "2025",
-        "url": "https://github.com/rostalbon/trabajo-integrador-robot",
-        "description": "Trabajo 100% en Python para practicar clases que realizamos en la materia Desarrollo III, en 6° año, en 2025, en conjunto con mis compañeras Liwen Albrecht, Nahiara Millahuala y Ángeles Pietra. Para este proyecto nos dividimos en base a las clases del robot, en mi caso trabajé con la clase madre Robot, el Main y la clase hija Accesorios.",
-        "isMain": true
+      "title": "Trabajo Integrador Robot",
+      "technologies": [
+        "Python"
+      ],
+      "year": "2025",
+      "url": "https://github.com/rostalbon/trabajo-integrador-robot",
+      "description": "Trabajo 100% en Python para practicar clases que realizamos en la materia Desarrollo III, en 6° año, en 2025, en conjunto con mis compañeras Liwen Albrecht, Nahiara Millahuala y Ángeles Pietra. Para este proyecto nos dividimos en base a las clases del robot, en mi caso trabajé con la clase madre Robot, el Main y la clase hija Accesorios.",
+      "isMain": true,
+      "id": "PP-fLFof5hU"
     },
     {
-        "title": "App Nerd",
-        "technologies": ["HTML", "JavaScript", "CSS"],
-        "year": "2024",
-        "url": "https://github.com/rostalbon/app-nerd",
-        "description": "Práctica sobre APIs que realicé individualmente en 5° año, en 2024. En resumen, es un buscador de personajes de Harry Potter (que están todos dentro de un JSON en una API), en donde aparecen los personajes en formato de tarjetas.",
-        "isMain": false
+      "title": "App Nerd",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS"
+      ],
+      "year": "2024",
+      "url": "https://github.com/rostalbon/app-nerd",
+      "description": "Práctica sobre APIs que realicé individualmente en 5° año, en 2024. En resumen, es un buscador de personajes de Harry Potter (que están todos dentro de un JSON en una API), en donde aparecen los personajes en formato de tarjetas.",
+      "isMain": false,
+      "id": "ibVD73I09ps"
     },
     {
-        "title": "Programa Hospital",
-        "technologies": ["Python"],
-        "year": "2025",
-        "url": "https://github.com/rostalbon/programa-repaso",
-        "description": "Proyecto individual de práctica de clases de Python, 6° año, 2025, en la materia Desarrollo III. Trabajando con clases madre e hijas sobre un hospital.",
-        "isMain": false
+      "title": "Programa Hospital",
+      "technologies": [
+        "Python"
+      ],
+      "year": "2025",
+      "url": "https://github.com/rostalbon/programa-repaso",
+      "description": "Proyecto individual de práctica de clases de Python, 6° año, 2025, en la materia Desarrollo III. Trabajando con clases madre e hijas sobre un hospital.",
+      "isMain": false,
+      "id": "KFmJnA0Hr9k"
     },
     {
-        "title": "Trabajo Clases Cámara",
-        "technologies": ["Python"],
-        "year": "2025",
-        "url": "https://github.com/rostalbon/desafio-github",
-        "description": "Práctica individual de clases de Python, 6° año, 2025, materia Desarrollo III. Clases para el funcionamiento de una cámara.",
-        "isMain": false
-    }]
+      "title": "Trabajo Clases Cámara",
+      "technologies": [
+        "Python"
+      ],
+      "year": "2025",
+      "url": "https://github.com/rostalbon/desafio-github",
+      "description": "Práctica individual de clases de Python, 6° año, 2025, materia Desarrollo III. Clases para el funcionamiento de una cámara.",
+      "isMain": false,
+      "id": "VYspB0g7TOw"
+    },
+    {
+      "title": "fdsfdsfdsf",
+      "html": true,
+      "css": true,
+      "javascript": true,
+      "typescript": false,
+      "python": false,
+      "others": false,
+      "year": 1980,
+      "url": "https://github.com/rostalbon/portafolio",
+      "description": "dsfdsfdsfsdfds",
+      "main": false,
+      "id": "nOlkrySOSqU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
