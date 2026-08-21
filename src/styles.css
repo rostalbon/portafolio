@@ -151,6 +151,10 @@ button:hover {
   font-size: smaller;
 }
 
+.btn-cancelar {
+  text-decoration: none;
+}
+
 /* EVERYTHING */
 
 .container {
