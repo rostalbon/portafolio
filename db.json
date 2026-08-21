@@ -74,17 +74,16 @@
     },
     {
       "title": "fdsfdsfdsf",
-      "html": true,
-      "css": true,
-      "javascript": true,
-      "typescript": false,
-      "python": false,
-      "others": false,
       "year": 1980,
       "url": "https://github.com/rostalbon/portafolio",
-      "description": "dsfdsfdsfsdfds",
+      "description": "fdfdgfdgfd",
       "main": false,
-      "id": "nOlkrySOSqU"
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "id": "vbXXs3KnEIs"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
