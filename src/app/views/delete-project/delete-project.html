@@ -6,5 +6,20 @@
         <div class="row">
             <h2>Eliminar proyecto</h2>
         </div>
+        <div class="row">
+            <form [formGroup]="deleteProjectForm" (ngSubmit)="deleteProject()">
+                <div class="mb-3">
+                    <label for="select" class="form-label">Seleccione un proyecto</label>
+                    <select formControlName="select" id="select" class="form-select">
+                        @for (project of projects; track $index) {
+                            <option [value]="project.id">{{project.title}} ({{project.year}})</option>
+                        }
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="submit">Eliminar</button>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
