@@ -25,7 +25,7 @@
         <h2>Proyectos principales</h2>
         <ul>
           @for (project of projects; track $index) {
-            @if (project.isMain == true) {
+            @if (project.main == true) {
               <li>
                 <div>
                   <a [href]="project.url">{{project.title}} ({{project.year}})</a>
