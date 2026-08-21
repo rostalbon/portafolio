@@ -1,8 +1,10 @@
 <section>
   <div class="container">
-    <a routerLink="/upload-project" class="btn-projects">Subir proyecto</a>
-    <span class="btn-projects">/</span>
-    <a routerLink="/delete-project" class="btn-projects">Eliminar proyecto</a>
+    <div class="group-btn-projects">
+      <a routerLink="/upload-project" class="btn-projects">Subir proyecto</a>
+      <span class="btn-projects">/</span>
+      <a routerLink="/delete-project" class="btn-projects">Eliminar proyecto</a>
+    </div>
     <h2>Proyectos destacados</h2>
     <ul>
       @for (project of projects; track $index) {

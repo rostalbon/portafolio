@@ -130,6 +130,12 @@ button:hover {
   text-align: justify;
 }
 
+/* PROJECTS */
+
+.group-btn-projects {
+  text-align: right;
+}
+
 /* SIGN IN */
 
 .submit {
@@ -180,5 +186,5 @@ a:hover {
 
 .btn-projects {
   text-decoration: none;
-  margin-right: 2em;
+  margin-right: 1em;
 }
