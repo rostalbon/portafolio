@@ -85,7 +85,7 @@ export class UploadProject {
     this.service.createProject(payload).subscribe({
       next: (data) => {
         console.log('Guardado con éxito', data);
-        this.uploadProjectForm.reset(); // Opcional: limpiar formulario al guardar
+        this.uploadProjectForm.reset();
       },
       error: (error) => console.error(error),
       complete: () => {
