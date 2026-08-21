@@ -71,19 +71,6 @@
       "description": "Práctica individual de clases de Python, 6° año, 2025, materia Desarrollo III. Clases para el funcionamiento de una cámara.",
       "isMain": false,
       "id": "VYspB0g7TOw"
-    },
-    {
-      "title": "fdsfdsfdsf",
-      "year": 1980,
-      "url": "https://github.com/rostalbon/portafolio",
-      "description": "fdfdgfdgfd",
-      "main": false,
-      "technologies": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "id": "vbXXs3KnEIs"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
