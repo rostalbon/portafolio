@@ -31,6 +31,10 @@ export class DeleteProject {
     return this.deleteProjectForm.get("select")
   }
   deleteProject() {
+    if (this.deleteProjectForm.invalid) {
+      this.deleteProjectForm.markAllAsTouched()
+      return
+    }
     const selectedId = this.deleteProjectForm.value.select;
     console.log('ID seleccionado:', selectedId);
   }
