@@ -1,6 +1,6 @@
 import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { ProjectsService } from '../../services/projects.service';
+import { Project, ProjectsService } from '../../services/projects.service';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
@@ -10,7 +10,7 @@ import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
   styleUrl: './delete-project.css',
 })
 export class DeleteProject {
-  projects: any = []
+  projects: Project[] = []
   private formBuilder = inject(FormBuilder)
   constructor(private service: ProjectsService, private cdr: ChangeDetectorRef) {
     this.service.getProjects().subscribe({
@@ -37,5 +37,19 @@ export class DeleteProject {
     }
     const selectedId = this.deleteProjectForm.value.select;
     console.log('ID seleccionado:', selectedId);
+    if (selectedId) {
+      this.service.deleteProject(selectedId).subscribe({
+        next: () => {
+          console.log(`Proyecto ${selectedId} eliminado correctamente.`);
+          
+          // Filtra la lista local para remover el elemento eliminado sin reargar la página
+          this.projects = this.projects.filter(p => p.id !== selectedId);
+          
+          // Reinicia el control del formulario
+          this.deleteProjectForm.reset();
+        },
+        error: (err) => console.error('Error al eliminar el proyecto:', err)
+      });
+    }
   }
 }
