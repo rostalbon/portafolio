@@ -25,7 +25,7 @@ export class DeleteProject {
     })
   }
   deleteProjectForm = this.formBuilder.group({
-    select: []
+    select: ['', Validators.required]
   })
   get Select() {
     return this.deleteProjectForm.get("select")
