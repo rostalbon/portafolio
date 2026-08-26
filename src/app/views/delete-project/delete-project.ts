@@ -30,8 +30,8 @@ export class DeleteProject {
   get Select() {
     return this.deleteProjectForm.get("select")
   }
-  formValues = this.deleteProjectForm.value
   deleteProject() {
-    console.log(this.formValues.select)
+    const selectedId = this.deleteProjectForm.value.select;
+    console.log('ID seleccionado:', selectedId);
   }
 }
