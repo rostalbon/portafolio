@@ -41,11 +41,7 @@ export class DeleteProject {
       this.service.deleteProject(selectedId).subscribe({
         next: () => {
           console.log(`Proyecto ${selectedId} eliminado correctamente.`);
-          
-          // Filtra la lista local para remover el elemento eliminado sin reargar la página
           this.projects = this.projects.filter(p => p.id !== selectedId);
-          
-          // Reinicia el control del formulario
           this.deleteProjectForm.reset();
         },
         error: (err) => console.error('Error al eliminar el proyecto:', err)
