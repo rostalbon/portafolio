@@ -15,6 +15,9 @@
                             <option [value]="project.id">{{project.title}} ({{project.year}})</option>
                         }
                     </select>
+                    @if (Select?.invalid && Select?.touched) {
+                        <div class="text-danger">Seleccione un proyecto</div>
+                    }
                 </div>
                 <div class="mb-3">
                     <button type="submit" class="submit">Eliminar</button>
